@@ -1,1 +1,1 @@
-console.log(typeof 1)
+console.log('Someday i will spend more time for study')
