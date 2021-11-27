@@ -1,1 +1,4 @@
-console.log('Someday i will spend more time for study')
+//Объекты: объекты (проверяем typeof), массивы (проверяем .isArray), функции (проверяем typeof)
+
+let a = [];
+console.log((Array.isArray(a)));
