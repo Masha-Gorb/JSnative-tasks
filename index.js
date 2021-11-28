@@ -16,5 +16,7 @@ copyStudent.friends.push('Mary');
 console.log(student);
 console.log(copyStudent);
 let deepCopyStudent = {...student, friends: [...student.friends, 'Carla']}
+//глубокое копирование имеет смысл когда небольшой уровень вложенности
+//можно подкл библ Lodash со встроенными функциями https://lodash.com/
 console.log(deepCopyStudent);
 console.log(student)
