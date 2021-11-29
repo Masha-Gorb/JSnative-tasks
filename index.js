@@ -1,4 +1,4 @@
-// N A T I V E JS LESSON1
+//LESSON1
 //Объекты: объекты (проверяем typeof), массивы (проверяем .isArray), функции (проверяем typeof)
 //let a = [];
 //console.log((Array.isArray(a)));
@@ -20,3 +20,24 @@ let deepCopyStudent = {...student, friends: [...student.friends, 'Carla']}
 //можно подкл библ Lodash со встроенными функциями https://lodash.com/
 console.log(deepCopyStudent);
 console.log(student)
+
+
+//LESSON2
+//урок про то как устроен внутри map, в целом суть в том что 
+//внутри методов массивов (да и в целом методах) работают обычные циклы
+
+//LESSON3
+//чекнуть введения в браузерные события https://learn.javascript.ru/introduction-browser-events
+//"Событие" -> event
+//ищет обработчик -> функция (обработчик, слушатель, коллбек, подписчик)
+//Браузер генерирует объект со сведениям о прошедшем событии -> e, ev, event
+//вызывает обработчик с объектом в кач-ве параметра
+
+const sml = document.getElementById('small');
+
+const onClickHandler = (e) => {
+    console.log(e)
+}
+
+sml.onClick = onClickHandler
+sml.addEventListener('click', onClickHandler);
