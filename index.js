@@ -32,6 +32,8 @@ console.log(student)
 //ищет обработчик -> функция (обработчик, слушатель, коллбек, подписчик)
 //Браузер генерирует объект со сведениям о прошедшем событии -> e, ev, event
 //вызывает обработчик с объектом в кач-ве параметра
+//e-target - элемент который сгенерировал событие (первый получил клик) 
+//не хватило у меня сил моральных дослушать до конца про браузерные события
 
 const sml = document.getElementById('small');
 
@@ -41,3 +43,49 @@ const onClickHandler = (e) => {
 
 sml.onClick = onClickHandler
 sml.addEventListener('click', onClickHandler);
+
+//LESSON4 
+
+const todoListId_1 = 1;
+const todoListId_2 = 2;
+
+const todoLists = [
+    {
+        id: todoListId_1,
+        title: "What to learn", 
+        filter: "All",
+    },
+    {
+        id: todoListId_2,
+        title: "What to read", 
+        filter: "All",
+    }
+];
+
+const tasks = {
+    [todoListId_1]: [ 
+        {
+            id: 3,
+            title: "a",
+            isDone: false,
+        },
+        {
+            id: 4,
+            title: "b",
+            isDone: false,
+        },
+    ],
+
+    [todoListId_2] : [
+        {
+            id: 5,
+            title: "c",
+            isDone: false,
+        },
+        {
+            id: 6,
+            title: "d",
+            isDone: false,
+        },
+    ]
+};
