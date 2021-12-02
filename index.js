@@ -97,7 +97,30 @@ const tasks = {
 //метод reduce (корень - сокращать, уменьшать) - сводит массив к одному значению
 //классическая задача - получить сумму элементов массива
 //принимает один обяз параметр - коллбек ф-ция, которая выполняется для каждого эл-та исходно массива
-//ф-ция эта принимает 2 параметра: первый это резалт функции, второй - стартовое значение (не обяз) 
 
 const numbers = [1, 2, 3, 5, 6, 7];
 console.log(numbers.reduce( (acc, el) => acc+el, 0) );
+
+const men = [
+    {name: 'Nick',
+    age: 40,
+    isMarried: false,},
+
+    {name: 'bob',
+    age: 25,
+    isMarried: true,},
+
+    {name: 'karl',
+    age: 34,
+    isMarried: true,},
+];
+
+console.log(men.reduce( (acc, el) => {
+    if(el.name === 'bob') {
+        let copyBob = {...el, isMarried: false}
+        acc.push(copyBob)
+        return acc 
+    }
+    acc.push(el)
+    return acc
+}, [])) //как стартовое значение надо добавить пустой массив чтобы ?? метод понял что с массивом работаем
