@@ -124,3 +124,39 @@ console.log(men.reduce( (acc, el) => {
     acc.push(el)
     return acc
 }, [])) //как стартовое значение надо добавить пустой массив чтобы ?? метод понял что с массивом работаем
+
+//LESSON 5 
+//bubble sort
+
+const arr = [3, 6, 46, 2876, 4, 23, 67, 309, 14];
+
+for (let j = 0; j < arr.length; j++) {
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i] > arr[i+1]) {
+        let temp = arr[i+1]
+        arr[i+1] = arr[i]
+        arr[i] = temp
+    }
+}
+}
+  console.log(arr)
+
+  //разобрали sort и reverse
+
+  //LESSON 6 
+
+  //сделать поверхностную копию объекта user 
+  const user = {
+      friends: 30,
+      age: 20,
+  };
+  const copyUser = {...user};
+
+  console.log(user === copyUser); 
+  console.log( user.friends === copyUser.friends);
+
+  //полная глубокая копия объекта user
+
+  const deepCopyUser = {...user, friends: {...user.friends}, age: {...user.age}};
+  console.log(user === deepCopyUser);
+  console.log(user.friends === deepCopyUser.friends)
