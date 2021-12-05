@@ -144,19 +144,70 @@ for (let j = 0; j < arr.length; j++) {
   //разобрали sort и reverse
 
   //LESSON 6 
+  //ништяк, тестик ! 
 
-  //сделать поверхностную копию объекта user 
+
+  const studenst = [
+      {
+          name: 'Bob',
+          age: 20,
+          isMarried: true,
+          scores: 105,
+      },
+      {
+        name: 'Ann',
+        age: 25,
+        isMarried: false,
+        scores: 120,
+    },
+    {
+        name: 'Helen',
+        age: 27,
+        isMarried: true,
+        scores: 110,
+    },
+    {
+        name: 'Nick',
+        age: 38,
+        isMarried: false,
+        scores: 89,
+    },
+    {
+        name: 'Paul',
+        age: 35,
+        isMarried: false,
+        scores: 122,
+    },
+    {
+        name: 'Tom',
+        age: 31,
+        isMarried: false,
+        scores: 115,
+    },
+      
+  ]
+
   const user = {
-      friends: 30,
-      age: 20,
-  };
-  const copyUser = {...user};
+    friends: 30,
+    age: 20,
+    friends: ['Nick', 'Alex', 'Helen']
+};
 
-  console.log(user === copyUser); 
-  console.log( user.friends === copyUser.friends);
+  //1. сделать поверхностную копию объекта user 
+  
+  //2. полная глубокая копия объекта user
 
-  //полная глубокая копия объекта user
+  //3. поверхностная копия массива students
 
-  const deepCopyUser = {...user, friends: {...user.friends}, age: {...user.age}};
-  console.log(user === deepCopyUser);
-  console.log(user.friends === deepCopyUser.friends)
+  //4. полная глубокая копия массива students
+
+  //5. отсортировать deepCopyStudents по алфавиту (sort)
+
+  //6. сформировать массив студентов у которого 100 и более баллов
+
+  //6а. вырезать из полученного массива трех лучших (метод splice)
+
+  //6б. Объединить массивы deepCopyStudents и bestStudents так 
+  //чтобы сохрнился порядок сортировки (spread оператор)
+
+  //
