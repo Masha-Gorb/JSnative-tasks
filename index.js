@@ -144,10 +144,12 @@ for (let j = 0; j < arr.length; j++) {
   //разобрали sort и reverse
 
   //LESSON 6 
-  //ништяк, тестик ! 
+  //ништяк, тестик !
+  
+  console.log('BELOW ARE EXAM ANSWERS')
 
 
-  const studenst = [
+  const students = [
       {
           name: 'Bob',
           age: 20,
@@ -210,4 +212,30 @@ for (let j = 0; j < arr.length; j++) {
   //6б. Объединить массивы deepCopyStudents и bestStudents так 
   //чтобы сохрнился порядок сортировки (spread оператор)
 
-  //
+  //7. сформировать массив холостых студентов (filter)
+  let notMarried = students.filter(f => f.isMarried === false)
+  console.log(notMarried)
+
+  //8. сформировать массив имен студентов (map)
+  let names = students.map(m => m.name)
+  console.log(names)
+
+  //9. сформировать строку из имен студентов разделенных 1) запятой, 2) пробелом
+
+  //10. Пол женился, выполните соответсвующие преобразования массива (map)
+//   let newStudents = students.map( s => s.name === "Paul" ? [...students, {...}] : [])
+//   console.log(newStudents)
+
+  //11. найдите студента по имени том
+   let tom = students.find(item => item.name === 'Tom')
+  console.log(tom)
+
+  //12. Найдите студента с самым высоким баллом
+
+  let topStudent = students.reduce()
+
+  //13. Найдите сумму баллов всех студентов
+
+  //14. Напишите функцию addFriends которая принимает параметром массив students
+  //и добавляет каждому студенту св-во friends, значением которого 
+  // является массив имен всех остальных студентов кроме владельца
