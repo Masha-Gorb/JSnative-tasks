@@ -151,7 +151,7 @@ for (let j = 0; j < arr.length; j++) {
 
   const students = [
       {
-          name: 'Bob',
+          name: 'Chris',
           age: 20,
           isMarried: true,
           scores: 105,
@@ -196,17 +196,39 @@ for (let j = 0; j < arr.length; j++) {
 };
 
   //1. сделать поверхностную копию объекта user 
+  let copyUser = {...user}
+  console.log(user === copyUser);
+  console.log(user.friends === copyUser.friends)
   
   //2. полная глубокая копия объекта user
 
+let deepCopyUser = {
+    ...user,
+    friends: [...user.friends]
+}
+console.log(deepCopyUser === user);
+console.log(deepCopyUser.friends === user.friends)
+
   //3. поверхностная копия массива students
+  let copyStudents = [...students];
+  console.log(students === copyStudents)
 
   //4. полная глубокая копия массива students
+  let deepCopyStudents = students.map(c => ({...c})); //????
+  console.log(deepCopyStudents)
 
   //5. отсортировать deepCopyStudents по алфавиту (sort)
+  let sortByName = copyStudents.sort((a, b) =>  a.name > b.name ? 1 : -1)
+  console.log('test 5')
+  console.log(sortByName)
+
+  //5a. отсортировать по кол-ву баллов
+  let sortByScore = students.sort((a,b) => b.scores - a.scores)
+  console.log('test 6')
+  console.log(sortByScore)
 
   //6. сформировать массив студентов у которого 100 и более баллов
-
+  
   //6а. вырезать из полученного массива трех лучших (метод splice)
 
   //6б. Объединить массивы deepCopyStudents и bestStudents так 
@@ -221,10 +243,22 @@ for (let j = 0; j < arr.length; j++) {
   console.log(names)
 
   //9. сформировать строку из имен студентов разделенных 1) запятой, 2) пробелом
+  let namesWihtComa = names.join(', ');
+  let namesWithSpace = names.join(' ')
+  console.log('test 9')
+  console.log(namesWihtComa)
+  console.log(namesWithSpace)
+
 
   //10. Пол женился, выполните соответсвующие преобразования массива (map)
-//   let newStudents = students.map( s => s.name === "Paul" ? [...students, {...}] : [])
-//   console.log(newStudents)
+  let newStudents = students.map( s => {
+      if (s.name === "Paul") {
+          return {...s, isMarried: true}
+      }
+       else return s });
+
+  console.log('test 10')
+  console.log(newStudents)
 
   //11. найдите студента по имени том
    let tom = students.find(item => item.name === 'Tom')
