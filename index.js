@@ -266,10 +266,22 @@ console.log(deepCopyUser.friends === user.friends)
 
   //12. Найдите студента с самым высоким баллом
 
-  let topStudent = students.reduce()
+  let bestStudent = students.reduce((acc, cur) => acc.scores > cur.scores ? acc : cur);
+  console.log('test 12')
+  console.log(bestStudent)
 
   //13. Найдите сумму баллов всех студентов
+
+  let scoresSum = students.reduce( (acc, cur) => acc + cur.scores, 0);
+  console.log('test 13')
+  console.log(scoresSum);
 
   //14. Напишите функцию addFriends которая принимает параметром массив students
   //и добавляет каждому студенту св-во friends, значением которого 
   // является массив имен всех остальных студентов кроме владельца
+
+  const addFriends = (students) => {
+      return students.map( f => ({...students, friends: names.filter(r => f.name !== r )}))
+  };
+  let lastTest = addFriends(students);
+  console.log(lastTest);
