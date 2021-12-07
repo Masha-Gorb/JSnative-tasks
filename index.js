@@ -281,7 +281,7 @@ console.log(deepCopyUser.friends === user.friends)
   // является массив имен всех остальных студентов кроме владельца
 
   const addFriends = (students) => {
-      return students.map( f => ({...students, friends: names.filter(r => f.name !== r )}))
+      return students.map( s => ({...s, friends: students.map (s => s.name).filter(st => st !== s.name )}))
   };
   let lastTest = addFriends(students);
   console.log(lastTest);
