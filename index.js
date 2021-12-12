@@ -285,3 +285,9 @@ console.log(deepCopyUser.friends === user.friends)
   };
   let lastTest = addFriends(students);
   console.log(lastTest);
+
+  //Codewars task 
+  console.log('THIS IS CODEWARS TASK')
+  let dna = "GACCGCCGCTTTC"
+  console.log(dna.replace(/T/g, "U"))
+  //метод риплейс запомнить надо, важно!!!
