@@ -291,3 +291,15 @@ console.log(deepCopyUser.friends === user.friends)
   let dna = "GACCGCCGCTTTC"
   console.log(dna.replace(/T/g, "U"))
   //метод риплейс запомнить надо, важно!!!
+
+  //Codewars task 
+const findRent = (d) => {
+    let rentPrice = d * 40
+    if (d >= 7 && d < 3) {
+        return rentPrice - 50
+    } else if (d >= 3) {
+        return rentPrice - 20
+    } else return rentPrice
+}
+
+//
