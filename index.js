@@ -302,4 +302,9 @@ const findRent = (d) => {
     } else return rentPrice
 }
 
-//
+//Codewars task
+function getEvenNumbers(numbersArray){
+    // filter out the odd numbers
+    return numbersArray.filter(f => f%2 === 0)
+  }
+  
