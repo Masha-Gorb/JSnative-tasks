@@ -360,3 +360,10 @@ function perimeterSequence(a,n) {
     }
     return sum;
   }
+
+  //codewars task easy one
+  //string to number
+  function getAge(inputString){
+    // return correct age (int). Happy coding :)
+      return parseInt(inputString)
+    }
