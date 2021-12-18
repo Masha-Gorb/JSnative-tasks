@@ -341,3 +341,22 @@ let standartRoll = 0.52 * 11.5;
 //              "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
 
 // }
+
+//codewars task
+//my solution but 
+function perimeterSequence(a,n) {
+    // your code
+    let perimetrOneCub = a+a; //периметр одного квадрата
+    let cubCount = 2*n;
+    return perimetrOneCub*cubCount;
+  }
+
+  //this i need to understand
+  function perimeterSequence(a,n) {
+    // your code
+    let sum = 0;
+    for(let i = 0 ; i < n; i++) {
+      sum += 4 * a;
+    }
+    return sum;
+  }
