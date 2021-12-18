@@ -307,4 +307,37 @@ function getEvenNumbers(numbersArray){
     // filter out the odd numbers
     return numbersArray.filter(f => f%2 === 0)
   }
+
+//codewars task
+
+let l = 6.3
+let w = 4.5
+let h = 3.29
+
+let standartRoll = 0.52 * 11.5;
+  let sideA = 6.3*3.29*2;
+  console.log(sideA)
+  let sideB = 4.5*3.29*2;
+  console.log(sideB)
+  let allRoomPerimetr = (sideA + sideB);
+  console.log(allRoomPerimetr)
+  console.log(standartRoll)
+  let rollCount = allRoomPerimetr / standartRoll;
+  console.log(rollCount)
+
+
+// function wallpaper(l, w, h) {
+//     // your code
+//   let standartRoll = 0.52 * 11.5;
+//   let sideA = l*h;
+//   let sideB = w*h;
+//   let allRoomPerimetr = (sideA + sideB)*2;
+//   let rollCount = allRoomPerimetr / standartRoll;
+//   console.log(rollCount)
   
+//   numbers = ["zero", "one", "two", "three", "four", 
+//              "five", "six", "seven", "eight", "nine", "ten", 
+//              "eleven", "twelve","thirteen", "fourteen", "fifteen", 
+//              "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+
+// }
