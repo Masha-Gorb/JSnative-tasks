@@ -367,3 +367,13 @@ function perimeterSequence(a,n) {
     // return correct age (int). Happy coding :)
       return parseInt(inputString)
     }
+
+    //codewars task
+    let n = 5;
+    const foo = (n) => {
+        if (n%n !== 0 && n%1 !== n) {
+            return n+1 
+        } else {
+            return n
+        }
+    }
