@@ -388,3 +388,29 @@ function perimeterSequence(a,n) {
           return Math.abs(result)
         }
       }
+
+      // codewars kata 
+      function getGrade (s1, s2, s3) {
+        // my solution 
+        let score = (s1+s2+s3)/3
+        if (0 <= score && score < 60) {
+          return "F" 
+        } else if (60 <= score && score < 70) {
+          return "D"
+        } else if (70 <= score && score < 80) {
+          return "C"
+        } else if (80 <= score && score < 90) {
+          return "B"
+        } else {
+          return 'A'
+        }
+      }
+// best practice
+      function getGrade (s1, s2, s3) {
+        avg = (s1+s2+s3)/3;
+        if (avg < 60)  return "F";
+          else if (avg < 70) return "D";
+          else if (avg < 80) return "C";
+          else if (avg < 90) return "B";
+          else return "A";
+      }
