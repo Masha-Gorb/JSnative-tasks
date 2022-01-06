@@ -414,3 +414,18 @@ function perimeterSequence(a,n) {
           else if (avg < 90) return "B";
           else return "A";
       }
+
+
+      //codewars 7kyu kata - remove self-duplicates items in array
+      let arrKata7 = [3, 4, 4, 3, 6, 3];
+      function solution(arrKata7){
+        let newArr = [];
+        while(arrKata7.length > 0){
+          const poppedElement = arrKata7.pop()
+          if (!newArr.includes(poppedElement)) {
+            newArr.push(poppedElement)
+          }
+        }
+        console.log(newArr.reverse)
+      }
+      solution(arrKata7);
