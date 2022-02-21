@@ -261,7 +261,7 @@ console.log(deepCopyUser.friends === user.friends)
   console.log(newStudents)
 
   //11. найдите студента по имени том
-   let tom = students.find(item => item.name === 'Tom')
+  let tom = students.find(item => item.name === 'Tom')
   console.log(tom)
 
   //12. Найдите студента с самым высоким баллом
@@ -429,3 +429,16 @@ function perimeterSequence(a,n) {
         console.log(newArr.reverse)
       }
       solution(arrKata7);
+
+//codewars 7kyu kata
+      console.log('new task')
+
+    let x = 'aaaaaddddr'
+    let total1 = x.split('').map(m => m.charCodeAt(0)).join('');
+    let total2 = total1.replace(/[7]/g, '1');
+    let total1Sum = total1.split('').reduce((partialSum, a) => partialSum + parseInt(a), 0)
+    let total2Sum = total2.split('').reduce((partialSum, a) => partialSum + parseInt(a), 0)
+    let result = total1Sum - total2Sum
+
+console.log(total1, total2, total1Sum, total2Sum, result)
+
