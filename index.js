@@ -442,3 +442,15 @@ function perimeterSequence(a,n) {
 
 console.log(total1, total2, total1Sum, total2Sum, result)
 
+// codewars 8kyu kata solution
+function well(x){
+    let newArr = x.filter(f => f === "good")
+    if (newArr.length >= 3) {
+        return 'I smell a series!'
+    } else if (newArr.length < 1) {
+        return 'Fail!'
+    } else {
+        return 'Publish!'
+    }
+}
+
