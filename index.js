@@ -454,3 +454,11 @@ function well(x){
     }
 }
 
+//codewars 8kyu kata
+let stringX = "Abba"
+let reverseX = stringX.split("").reverse().join("");
+//solution
+// return x.toLowerCase().split("").reverse().join("") === x.toLowerCase() ? true : false
+
+
+
