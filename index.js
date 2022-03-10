@@ -460,5 +460,9 @@ let reverseX = stringX.split("").reverse().join("");
 //solution
 // return x.toLowerCase().split("").reverse().join("") === x.toLowerCase() ? true : false
 
+//codewars 8kyu kata
+let strThisKata = '3:4';
+let strThisKataToNumber = strThisKata.split(":").map(m => Number(m))
+console.log(strThisKataToNumber)
 
 
