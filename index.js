@@ -465,4 +465,41 @@ let strThisKata = '3:4';
 let strThisKataToNumber = strThisKata.split(":").map(m => Number(m))
 console.log(strThisKataToNumber)
 
+console.log('TRAINING MAP FILTER')
+
+let dogs = [
+    {
+        name: 'Jack',
+        age: 2,
+        color: 'braun',
+    },
+    {
+        name: 'Jo',
+        age: 4,
+        color: 'white',
+    },
+    {
+        name: 'Jessica',
+        age: 6,
+        color: 'black',
+    },
+    {
+        name: 'Jannet',
+        age: 1,
+        color: 'tricolor',
+    },
+]
+//MAP
+Array.prototype.myMap = function (cb) {
+    let newArr = [];
+    for (let i = 0; i < this.length; i++) {
+        newArr.push( cb(this[i]));
+    }
+    return newArr;
+}
+console.log(dogs.myMap( (d) => d.name))
+console.log(dogs.map((d) => d.name))
+
+//FILTER
+
 
