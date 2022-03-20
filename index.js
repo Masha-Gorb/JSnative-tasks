@@ -501,5 +501,17 @@ console.log(dogs.myMap( (d) => d.name))
 console.log(dogs.map((d) => d.name))
 
 //FILTER
+Array.prototype.myFilter = function (cb) {
+    let newArr = [];
+    for (let i = 0; i < this.length; i++) {
+        if (cb(this[i])) {
+            newArr.push( this[i]);
+        }
+    }
+    return newArr;
+}
+
+console.log(dogs.filter( d => d.age > 2))
+console.log(dogs.myFilter( d => d.age > 2))
 
 
