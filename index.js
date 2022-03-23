@@ -514,4 +514,8 @@ Array.prototype.myFilter = function (cb) {
 console.log(dogs.filter( d => d.age > 2))
 console.log(dogs.myFilter( d => d.age > 2))
 
+console.log('PROMISE TRAINING')
+let prom = new Promise( (resolve, reject) => {
 
+})
+console.log('prom', prom)
