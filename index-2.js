@@ -281,3 +281,172 @@
 //     .then(res => console.log(res.message))
 //     .catch(res => console.log(res.message))
 
+//Tasks from 22.03
+
+//TASK 1
+// const foo = () => {
+//     const bar = () => {
+//         console.log('bar')
+//     }
+//
+//     bar()
+//     baz()
+//
+//     const baz = () => {
+//         console.log(bazLog)
+//     }
+//
+//     const bazLog = 'baz';
+// }
+//
+// foo()
+
+//TASK 2
+// (() => {
+//     let a = b = 5
+// })() //ф-ция это блок видимости, внутри которого мы ниче не видим кроме того что выносится в глобальный область видимости
+//
+//
+// const c = {
+//    showB() {
+//        console.log(b)
+//    }
+// }
+//
+// c.showB()  //5
+
+
+//TASK 3
+// const a = (x, y) => {
+//
+//     console.log(y)
+//
+//     return {
+//         a: (z) => {
+//             a(y, z)
+//         }
+//     }
+// }
+//
+// const res = a(1)
+//
+// res.a(2)
+// res.a(3)
+// res.a(4)
+
+
+// TASK 4
+// const user = {
+//
+//    _data: {
+//        name: "Colin"
+//    },
+//
+//    _methods: {
+//        _getName: function () {
+//            return this.name;
+//        },
+//    },
+//
+//    getName() {
+//        return this._methods._getName()
+//    }
+// }
+//
+// console.log(
+//    user.getName()
+// )
+
+//TASK 5
+// const getCatCreator = () => (
+//     class Cat {
+//         constructor(name) {
+//             this.name = name
+//             return 'No cat name' //игнорируется тк примитив, возвращает класс
+//         }
+//     }
+// )
+//
+// const cat = new (getCatCreator())("Cat name!")
+//
+// console.log(cat.name)
+
+
+//TASK 6
+// let animal = {
+//     eats: true
+// }
+//
+// function Rabbit(name) {
+//     this.name = name
+// }
+//
+// let rabbit = new Rabbit('White Rabbit')
+//
+// Rabbit.prototype = animal
+//
+// console.log(rabbit.eats)
+
+// function Rabbit(name) {
+//     this.name = name;
+// }
+//
+// let rabbit = new Rabbit("White Rabbit");
+// let rabbit2 = new rabbit.constructor("Black Rabbit");
+// console.log(rabbit)
+// console.log(rabbit2)
+
+//WTF???
+// function Rabbit() {
+// }
+//
+// // Rabbit.prototype = {jumps: true }
+// console.dir(Rabbit)
+//
+// let rabbit = new Rabbit();
+//
+// console.dir(rabbit.constructor)
+// console.log(rabbit.constructor === Rabbit)
+
+
+// const a = {
+//     toString() {
+//         return 'key of a'
+//     },
+//     b: {
+//         name: 'b'
+//     }
+// }
+//
+// const c = {};
+// c[a] = 'a'
+// // console.log(c)
+//
+// c.b = a.b.name
+// console.log(c)
+
+
+String.prototype.add = function (str) {
+    return this + str
+}
+
+const arr = [1, 2, 3]
+
+console.log(
+    arr
+        .join("a") //'1a2a3'
+        .replaceAll("a", '0,') //'10,20,3'
+        .add("0") //'10,20,30'
+        .split(",") //['10', '20',  '30']
+        .map(n => +n) //[10, 20, 30]
+        .reduce((acc, n, i, arr) => {
+            acc[i] = n
+            return acc
+        }, {name: 'lol'}) //{}
+)
+ //acc - место где будем накапливать значение
+//     [10, 20, 30].reduce((acc, n, i, arr) => {
+//         // console.log(acc, n, i, arr)
+//         // console.log(acc+n)
+//         return acc+n
+// }, 100)
