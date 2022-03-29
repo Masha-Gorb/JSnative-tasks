@@ -440,9 +440,9 @@ console.log(
         .split(",") //['10', '20',  '30']
         .map(n => +n) //[10, 20, 30]
         .reduce((acc, n, i, arr) => {
-            acc[i] = n
+            acc[n] = n
             return acc
-        }, {name: 'lol'}) //{}
+        }, {}) //{}
 )
  //acc - место где будем накапливать значение
 //     [10, 20, 30].reduce((acc, n, i, arr) => {
