@@ -463,9 +463,19 @@ console.log(
 // }
 
 //ката 8куи. дана строка, надо вернуть строку где каждая буква удвоена
-console.log('new task')
+// console.log('new task')
+//
+// let str = 'Hello world'
+// let arr11 = str.replace(/./g, m => Array(3).join(m))
+//
+// console.log(arr11)
 
-let str = 'Hello world'
-let arr11 = str.replace(/./g, m => Array(3).join(m))
-
-console.log(arr11)
+//ката 8куи: написать прототип для стринги, который бы проверял капсом ли написана строка
+// String.prototype.isUpperCase = function() {
+//     // your code here
+//     if (this.toUpperCase() == this) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
