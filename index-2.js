@@ -451,13 +451,21 @@ console.log(
 //         return acc+n
 // }, 100)
 
-//ката 8 куи. дана строка, надо вернуть строку с поменяными местами словами
-//решение мое
-function nameSuffle(str){
-    var arr = str.split(" ");
-    return arr[1] + ' ' + arr[0]
-}
-//бест практис
-function nameSuffle(str){
-  return str.split(' ').reverse().join(' ')
-}
+// //ката 8 куи. дана строка, надо вернуть строку с поменяными местами словами
+// //решение мое
+// function nameSuffle(str){
+//     var arr = str.split(" ");
+//     return arr[1] + ' ' + arr[0]
+// }
+// //бест практис
+// function nameSuffle(str){
+//   return str.split(' ').reverse().join(' ')
+// }
+
+//ката 8куи. дана строка, надо вернуть строку где каждая буква удвоена
+console.log('new task')
+
+let str = 'Hello world'
+let arr11 = str.replace(/./g, m => Array(3).join(m))
+
+console.log(arr11)
