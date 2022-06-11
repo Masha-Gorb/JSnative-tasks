@@ -494,9 +494,18 @@ console.log(
 //     return parseInt(result)
 // }
 
-console.log('new task')
 //7куи сложная таска: дано число и массив функций, надо прогнать число через все функции в массиве
 //решение
 //function chain(input, fs) {
 //   return fs.reduce(function(input, fs) { return fs(input) }, input)
 // }
+
+//7куи ката: понять, есть ли вторая строка в конце (!!) первой строки
+//метод строки includes узнает есть ли одна строка в другой (но по всей длине)
+//решение
+// function solution(str, ending){
+//     return str.endsWith(ending)
+// }
+//оказывается есть чисто метод endsWith(), куда в скобках передается окончание...
+
+console.log('new task')
