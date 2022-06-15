@@ -508,7 +508,6 @@ console.log(
 // }
 //оказывается есть чисто метод endsWith(), куда в скобках передается окончание...
 
-console.log('new task')
 //7куи ката: сделать массив, в котором значение 1 и значение 2 будут повторятся столько раз сколько число
 // let fooForThiskata = (n, firstValue, secondValue) => {
 //     let solutionArr = [firstValue, secondValue]
@@ -592,4 +591,16 @@ console.log('new task')
 //решение ниже как пример более элегантного решения
 //const evenNumbers = (array, number) => array.filter(item => item % 2 === 0).slice(-number);
 
+//7kyu kata
+//сделать каждую вторую букву в строке заглавной
+// let testString = "stop making spongebob memes!"
+// function spongeMeme(sentence) {
+//     let arr = sentence.split('')
+//     return arr.map((v,i)=>i%2!==0?v.toLowerCase():v.toUpperCase()).join('')
+// }
+// //блядь!!!! в map можно оказ и индекс передавать сукааа
+//
+// console.log(spongeMeme(testString))
+
 console.log('new task')
+
