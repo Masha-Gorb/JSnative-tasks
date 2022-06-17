@@ -602,5 +602,80 @@ console.log(
 //
 // console.log(spongeMeme(testString))
 
-console.log('new task')
+//7kyu kata - из объекта сделать квери строку
+// function toQueryString (obj) {
+//     for (const property in object) {
+//         return (`${property}: ${object[property]}`)
+//     }
+// }
+// let testObj = { a: 'Z', b: 'Y', c: 'X', d: 'W', e: 'V', f: 'U', g: 'T' }
+// let testObj2 = { foo: [ 1, 3 ], bar: [ 2, 4 ] }
+//  console.log(toQueryString(testObj))
+//
+// //
+// // // expected output:
+// // // "a: 1"
+// // // "b: 2"
+// // // "c: 3"
 
+// const params = new URLSearchParams({ foo: [ 1, 3 ], bar: [ 2, 4 ] });
+// console.log(params);
+
+// const buildURLQuery = obj =>
+//     Object.entries(obj)
+//         .map(pair => pair.map(encodeURIComponent).join('='))
+//         .join('&');
+//
+// console.log(buildURLQuery(testObj2))
+
+//'foo=1&foo=3&bar=2&bar=4'
+
+// const testObj2 = { foo: [ 1, 3 ], bar: [ 2, 4 ] };
+//
+// for (const property in testObj2) {
+//     console.log(`${property}: ${testObj2[property]}`);
+// }
+//
+// console.log(testObj2.foo.map(m => 'foo=' + m + '&'))
+// так и не смогла решить эту задачу
+
+console.log('new task')
+// 7kyu kata убрать из строки все гласные
+// let str = "This website is for losers LOL!"
+// let arr444 = str.split('').filter(f => f !== 'e')
+//     .filter(f=> f !== 'o').
+//     filter(f => f !== 'i').
+//     filter(f=> f !== 'u').
+//         filter(f => f !== 'O').join('')
+// console.log(arr444)
+//самое лоховское решение евар
+// function disemvowel(str) {
+//     return str.split('').filter(f => f !== 'e')
+//         .filter(f=> f !== 'o').
+//         filter(f => f !== 'i').
+//         filter(f => f !== 'a').
+//         filter(f=> f !== 'u').
+//         filter(f => f !== 'E')
+//         .filter(f=> f !== 'O').
+//         filter(f => f !== 'I').
+//         filter(f=> f !== 'U').
+//         filter(f => f !== 'A')
+//         .join('')
+// }
+// норм решение с фильтром (не оч мне понятное)
+//function disemvowel(str) {
+//   var vowels = ['a', 'e', 'i', 'o', 'u'];
+//
+//   return str.split('').filter(function(el) {
+//     return vowels.indexOf(el.toLowerCase()) == -1;
+//   }).join('');
+// }
+//норм решение с инклюдом
+//const vowels = 'aeiou';
+//
+// function disemvowel(str) {
+//   return str
+//     .split('')
+//     .filter(letter => !vowels.includes(letter.toLowerCase()))
+//     .join('');
+// }
