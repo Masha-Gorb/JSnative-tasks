@@ -639,7 +639,6 @@ console.log(
 // console.log(testObj2.foo.map(m => 'foo=' + m + '&'))
 // так и не смогла решить эту задачу
 
-console.log('new task')
 // 7kyu kata убрать из строки все гласные
 // let str = "This website is for losers LOL!"
 // let arr444 = str.split('').filter(f => f !== 'e')
@@ -679,3 +678,17 @@ console.log('new task')
 //     .filter(letter => !vowels.includes(letter.toLowerCase()))
 //     .join('');
 // }
+
+//7kyu task вывести серединную букву в стринге
+// let testStr1 = 'test'
+// let testStr2 = 'testing'
+//solution
+//function getMiddle(s) {
+//     if (s.length % 2 == 0)
+//         return s.substring(s.length / 2 - 1, s.length / 2 + 1);
+//     else
+//         return s.substring(Math.floor(s.length / 2), Math.floor(s.length / 2) + 1)
+// }
+
+console.log('new task')
+
