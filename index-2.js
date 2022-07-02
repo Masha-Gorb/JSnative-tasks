@@ -690,24 +690,37 @@ console.log(
 //         return s.substring(Math.floor(s.length / 2), Math.floor(s.length / 2) + 1)
 // }
 
-console.log('new task')
 //8kyu task мудреная таска фу
-let sheepArr = ["sheep", "sheep", "sheep", "wolf", "sheep", 'wolf']
+// let sheepArr = ["sheep", "sheep", "sheep", "wolf", "sheep", 'wolf']
+//
+// function foo(arr) {
+//     let arr2 = arr.reverse()
+//     if (arr2[0] !== 'wolf') {
+//         function IsWolf(element) {
+//             const danger = 'wolf'
+//             return element === danger
+//         }
+//
+//         let a = arr2.findIndex(IsWolf)
+//         return 'Oi! Sheep number ' + a + '! You are about to be eaten'
+//     } else {
+//         return 'Pls go away and stop eating my sheep'
+//     }
+//
+// }
+//
+// console.log(foo(sheepArr))
 
-function foo(arr) {
-    let arr2 = arr.reverse()
-    if (arr2[0] !== 'wolf') {
-        function IsWolf(element) {
-            const danger = 'wolf'
-            return element === danger
-        }
+//8kyu task
+// function pillars(numPill, dist, width) {
+//     // your code here
+//     if (numPill === 1) {
+//         return 0
+//     } else {
+//         let result = ((dist*100)*(numPill-1)) + (width*(numPill-2))
+//         return result
+//     }
+// }
 
-        let a = arr2.findIndex(IsWolf)
-        return 'Oi! Sheep number ' + a + '! You are about to be eaten'
-    } else {
-        return 'Pls go away and stop eating my sheep'
-    }
+console.log('new task')
 
-}
-
-console.log(foo(sheepArr))
