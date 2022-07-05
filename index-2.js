@@ -728,6 +728,33 @@ console.log(
 // let busStops = [[10,0],[3,5],[5,8]]
 // let testRes = busStops.map(m => m[0]-m[1]).reduce((a,b)=>a+b)
 // console.log(testRes)
+
 console.log('new task')
+//7kyu task
+
+let a = {
+    'tim': 1,
+    'jim': 3,
+    'randy': 9,
+    'sandy': 6,
+    'andy': 7,
+    'katie': 6,
+    'laura': 9,
+    'saajid': 9,
+    'alex': 9,
+    'john': 9,
+    'mr': 8
+}
+
+let d = 'katie'
+let b = a.d
+console.log(b)
+// let meetAsArray = Object.values(a).reduce((a,b) => a+b )
+//
+// console.log(meetAsArray/11)
+
+// function outed(meet, boss) {
+//     let allMemberScore = meet.map(m => m.key)
+// }
 
 
