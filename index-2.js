@@ -760,7 +760,6 @@ console.log(
 //    return Math.pow(Math.round(Math.sqrt(num)), 2)
 //
 
-console.log('new task')
 //8 kyu task
 // function foo (p1, p2) {
 //     if(p1 === 'rock' && p2 === 'scissors') {
@@ -772,6 +771,13 @@ console.log('new task')
 //
 // console.log(foo('rock', 'rock'))
 
+//8kyu
+//solved two easy katas
+//first
+//const index = (array, n) => array.length > n ? Math.pow(array[n], n) : -1;
 
+//second
+// известно 3 простых чисел Вильсона: 5, 13, 563
 
+console.log('new task')
 
