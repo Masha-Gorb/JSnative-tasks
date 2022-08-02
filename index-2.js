@@ -779,5 +779,13 @@ console.log(
 //second
 // известно 3 простых чисел Вильсона: 5, 13, 563
 
+//8kyu kata
+//function derive(coefficient,exponent) {
+//   let a = coefficient*exponent
+//   let b = exponent-1
+//   return(a+'x^'+b)
+// }
+
 console.log('new task')
+
 
