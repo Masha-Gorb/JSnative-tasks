@@ -1,6 +1,30 @@
-console.log('new task')
+//вариант 1 с примитивным вычислением факториала
+//слишком долго вычисляет большие числа и кодварс валится
 
-function strong(n) {
+function strong1(n) {
+    let arr2 = String(n).split('').map((el) => {
+        function factorial(n) {
+            let result = 1;
+            while (n) {
+                result *= n--;
+            }
+            return result;
+        }
+        return factorial(el)
+    })
+    let result = arr2.reduce(function (sum, elem) {
+        return sum + elem;
+    });
+    if (Number(result) === n) {
+        return "STRONG!!!!"
+    } else {
+        return "Not Strong !!"
+    }
+}
+console.log(strong1(185))
+
+//вариант 2, по времени проходит, но валится ошибка
+function strong2(n) {
     let arr2 = String(n).split('').map((el) => {
         function factorial(n){
             var f = "var o = {" +
@@ -35,4 +59,9 @@ function strong(n) {
     }
 }
 
-console.log(strong(40585))
+//с у к а
+//рабочее решение
+function strong(n) {
+    return [1,2,145,40585].includes(n)?'STRONG!!!!':'Not Strong !!';
+}
+
