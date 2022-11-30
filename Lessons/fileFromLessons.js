@@ -33,13 +33,7 @@
 // )
 //
 // console.log(
-//     names.myMap((n, i) => ({ name: n, index: i })) //[ { name; 'Hanna', index: 0 }, { name: 'Alex', index: 1 } ]
-// )
-
-//TASK 2.2
-//написать свой filter чтобы применялся к обоим массивам
-// const nums = [1, 2, 3, 4];
-// const names = ['Hanna', 'Alex']
+//     names.myMap((n, i) => ({ name: n, index: i })) //[ { name; 'Hanna', index: 0 }, { name: 'Alex', index: 1         // const names = ['Hanna', 'Alex']
 //
 // Array.prototype.myFilter = function (callback, ...args) {
 //     let newArr = [];
