@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/native-tasks.iml" filepath="$PROJECT_DIR$/.idea/native-tasks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../onpoint-2/.idea/onpoint-2.iml" filepath="$PROJECT_DIR$/../onpoint-2/.idea/onpoint-2.iml" />
     </modules>
   </component>
 </project>
