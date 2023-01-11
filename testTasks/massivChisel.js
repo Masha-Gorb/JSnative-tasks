@@ -1,3 +1,4 @@
+
 //Написать функцию sostavChisla(massivChisel: number[], chislo: number),
 //   которая бы находила все возможные комбинации чисел из massivChisel,
 //   сумма которых равна chislo. При этом:
@@ -9,6 +10,8 @@
 //       massivChisel: [8, 2, 3, 4, 6, 7, 1],
 //       result: [[2, 3], [4, 1]]
 //     }
+
+//ХОРОШЕЕ РЕШЕНИЕ НО НЕ ПОДХОДИТ
 
 let findCombinations = (arr, number) => {
     let result = [];
